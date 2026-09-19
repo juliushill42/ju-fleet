@@ -1,0 +1,28 @@
+:root { --bg:#07080a; --ink:#f4f5f7; --muted:#9aa0a8; --line:#2a2d33; --panel:#101216; --hi:#fff; }
+*{box-sizing:border-box} html,body,#root{margin:0;min-height:100%}
+body{font-family:ui-sans-serif,system-ui,sans-serif;background:radial-gradient(900px 500px at 10% -10%,#1a1d24,transparent 50%),var(--bg);color:var(--ink)}
+.app{min-height:100dvh;padding:16px 16px 112px}
+.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:14px}
+h1{margin:0;letter-spacing:.14em;font-size:22px}
+.sub{color:var(--muted);font-size:13px;margin-top:4px}
+.pill{border:1px solid var(--line);padding:8px 10px;border-radius:999px;font-size:12px}
+.hero,.card,.row{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:14px}
+.hero h2{margin:0 0 8px}
+.hero p,.cap{color:var(--muted);line-height:1.45;margin:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0}
+.card b{display:block;font-size:20px}
+.list{display:flex;flex-direction:column;gap:10px}
+.row h3{margin:0 0 4px;font-size:16px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+button,.btn{appearance:none;border:0;border-radius:14px;min-height:46px;padding:12px 14px;font-weight:700;background:#fff;color:#07080a}
+button.ghost,.btn.ghost{background:transparent;color:#fff;border:1px solid var(--line)}
+button.wide{width:100%}
+input,textarea,select{width:100%;border:1px solid var(--line);background:#0b0c0f;color:var(--ink);border-radius:14px;padding:14px;font-size:16px}
+label{display:block;color:var(--muted);font-size:12px;margin:10px 0 6px}
+.nav{position:fixed;left:8px;right:8px;bottom:8px;display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:8px;border:1px solid var(--line);border-radius:22px;background:rgba(7,8,10,.94)}
+.nav button{background:transparent;color:var(--muted);min-height:48px;font-size:10px;padding:6px 2px}
+.nav button.on{background:#fff;color:#07080a}
+.ok{color:#c8ffd4}.warn{color:#ffd18a}
+.chat{display:flex;flex-direction:column;gap:8px;margin:10px 0}
+.bubble{padding:12px;border-radius:14px;border:1px solid var(--line);max-width:94%}
+.me{align-self:flex-end;background:#1a1d24}
